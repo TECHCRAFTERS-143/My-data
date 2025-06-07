@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder=".")
 CORS(app)
 
 # MongoDB Atlas URL from environment variable or direct string (for local test)
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://<user>:<pass>@cluster.mongodb.net/db")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://techcrafters143:Gyc1KFACfPSFuKzX@cluster0.zultvng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 client = MongoClient(MONGO_URI)
 db = client["signupdb"]
 collection = db["users"]
